@@ -7,6 +7,7 @@ import Info from './components/Info';
 import InfoUsingReducer from './components/InfoUsingReducer';
 import Average from './components/Average';
 import AverageImproved from './components/AverageImproved';
+import InfoUsingCustomHook from './components/InfoUsingCustomHook';
 
 function App() {
   const [visible, setVisible] = useState(true);
@@ -22,6 +23,7 @@ function App() {
         {visible? <InfoUsingReducer /> : ''}
         {visible? <Average /> : ''}
         {visible? <AverageImproved /> : ''}
+        {visible? <InfoUsingCustomHook /> : ''}
     </div>
   );
 }

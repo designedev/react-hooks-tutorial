@@ -23,7 +23,9 @@ const AverageImproved = () => {
   }, [number, list]);
 
   const getLi = list.map((e, index) => <li key={index}>{e}</li>)
-  const avg = useMemo(() => getAverage(list), [list]);
+  const avg = useMemo(() => {
+    return getAverage(list)
+  }, [list]);
 
   return (
     <div>
