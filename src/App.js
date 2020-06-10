@@ -8,6 +8,7 @@ import InfoUsingReducer from './components/InfoUsingReducer';
 import Average from './components/Average';
 import AverageImproved from './components/AverageImproved';
 import InfoUsingCustomHook from './components/InfoUsingCustomHook';
+import SassComponent from './components/SassComponent';
 
 function App() {
   const [visible, setVisible] = useState(true);
@@ -24,6 +25,7 @@ function App() {
         {visible? <Average /> : ''}
         {visible? <AverageImproved /> : ''}
         {visible? <InfoUsingCustomHook /> : ''}
+        <SassComponent />
     </div>
   );
 }

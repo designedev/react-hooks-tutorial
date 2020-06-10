@@ -1,0 +1,18 @@
+@import '~include-media/dist/include-media';
+@import '~open-color/open-color';
+
+//변수 사용.
+$red: red;
+$orange: orange;
+$yellow: yellow;
+$green: green;
+$blue: blue;
+$indigo: indigo;
+$violet: violet;
+$black: black;
+
+@mixin square($size) {
+  $calculated: 32px * $size;
+  width: $calculated;
+  height: $calculated;
+};
